@@ -9,7 +9,10 @@ import './App.css';
 
 // import Counter from './Components/Counter';
 
+
 import UseState from './Components/UseState';
+import UseEffect  from './Components/UseEffect';
+
 
 
 function App(){
@@ -22,7 +25,8 @@ function App(){
                     {/* <Counter/> */}
             {/* <ExternalCss/> */}
 
-        <UseState/>
+        {/* <UseState/> */}
+        <UseEffect/>
 
 
         </div>
