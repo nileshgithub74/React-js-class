@@ -1,37 +1,40 @@
-// import React, { useState, useEffect } from 'react';
-// import logo from './logo.svg';
-// import './App.css';
-// // import Dashboard  from './Components/Dashboard';
-// // import Greeting  from './Components/Greeting';
-// // import InlineCss  from './Components/InlineCss';
+import React, { useState, useEffect } from 'react';
+import logo from './logo.svg';
+import './App.css';
+// import Dashboard  from './Components/Dashboard';
+// import Greeting  from './Components/Greeting';
+// import InlineCss  from './Components/InlineCss';
 
-// // import ExternalCss from './Components/ExternalCss';
+// import ExternalCss from './Components/ExternalCss';
 
-// // import Counter from './Components/Counter';
+// import Counter from './Components/Counter';
 
 
 // import UseState from './Components/UseState';
 // import UseEffect  from './Components/UseEffect';
 
+import ThemeSwitch from './Components/ThemeSwitch';
 
 
-// function App(){
-//     return(
-//         <div className="App">
-//             {/* <Dashboard name= "Nilesh kumar" />
-//             <Greeting   name= " Nilesh"/> */}
 
-//             {/* <InlineCss/> */}
-//                     {/* <Counter/> */}
-//             {/* <ExternalCss/> */}
+function App(){
+    return(
+        <div className="App">
+            {/* <Dashboard name= "Nilesh kumar" />
+            <Greeting   name= " Nilesh"/> */}
 
-//         {/* <UseState/> */}
-//         <UseEffect/>
+            {/* <InlineCss/> */}
+                    {/* <Counter/> */}
+            {/* <ExternalCss/> */}
+
+        {/* <UseState/> */}
+        {/* <UseEffect/> */}
+        <ThemeSwitch></ThemeSwitch>
 
 
-//         </div>
-//     );
-// }
+        </div>
+    );
+}
 
 
 
@@ -59,30 +62,30 @@
 // //   );
 // // }
 
-//  export default App;
+ export default App;
 
 
 
 
 
-import React from "react";
-import ComponentA from "./Components/ComponentA";
+// import React from "react";
+// import ComponentA from "./Components/ComponentA";
 
-const StudentContext = React.createContext();
-const MarkContext = React.createContext();
+// const StudentContext = React.createContext();
+// const MarkContext = React.createContext();
 
-const App = () => {
-  return (
-    <>
+// const App = () => {
+//   return (
+//     <>
       
-      <StudentContext.Provider value={'nilesh'}>
-        <MarkContext.Provider value={96}>
-          <ComponentA />
-        </MarkContext.Provider>
-      </StudentContext.Provider>
-    </>
-  );
-};
+//       <StudentContext.Provider value={'nilesh'}>
+//         <MarkContext.Provider value={96}>
+//           <ComponentA />
+//         </MarkContext.Provider>
+//       </StudentContext.Provider>
+//     </>
+//   );
+// };
 
-export default App;
-export { StudentContext, MarkContext };
+// export default App;
+// export { StudentContext, MarkContext };
