@@ -21,18 +21,12 @@ function UseMemoExample() {
   return (
     <div>
       <div>
-        <button onClick={incrementOne}>
-       Counter One: {counterOne}
-        </button>
+        <button onClick={incrementOne}>Counter One: {counterOne}</button>
 
-        {isEven ? "Even" : "Odd"}
+        <span> {isEven ? "Even" : "Odd"}</span>
       </div>
 
-      <div>
-        <button onClick={incrementTwo}>
-        Counter Two: {counterTwo}
-        </button>
-      </div>
+      <button onClick={incrementTwo}>Counter Two: {counterTwo}</button>
     </div>
   );
 }
