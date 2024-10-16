@@ -15,7 +15,9 @@ import './App.css';
 
 // import ThemeSwitch from './Components/ThemeSwitch';
 // import UseCallback from './Components/UseCallback';
-import UseMemo  from './Components/UseMemo';
+// import UseMemo  from './Components/UseMemo';
+
+import UseReducer from './Components/UseReducer';
 
 
 
@@ -36,7 +38,9 @@ function App(){
         {/* <ThemeSwitch></ThemeSwitch> */}
         {/* <UseCallback></UseCallback> */}
 
-        <UseMemo></UseMemo>
+        {/* <UseMemo></UseMemo> */}
+
+        <UseReducer/>
          
 
           
