@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import logo from './logo.svg';
+
 import './App.css';
 // import Dashboard  from './Components/Dashboard';
 // import Greeting  from './Components/Greeting';
@@ -17,7 +17,7 @@ import './App.css';
 // import UseCallback from './Components/UseCallback';
 // import UseMemo  from './Components/UseMemo';
 
-import UseReducer from './Components/UseReducer';
+// import UseReducer from './Components/UseReducer';
 
 
 
@@ -26,21 +26,10 @@ import UseReducer from './Components/UseReducer';
 function App(){
     return(
         <div className="App">
-            {/* <Dashboard name= "Nilesh kumar" />
-            <Greeting   name= " Nilesh"/> */}
 
-            {/* <InlineCss/> */}
-                    {/* <Counter/> */}
-            {/* <ExternalCss/> */}
 
-        {/* <UseState/> */}
-        {/* <UseEffect/> */}
-        {/* <ThemeSwitch></ThemeSwitch> */}
-        {/* <UseCallback></UseCallback> */}
 
-        {/* <UseMemo></UseMemo> */}
-
-        <UseReducer/>
+  
          
 
           
