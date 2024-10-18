@@ -19,6 +19,8 @@ import './App.css';
 
 // import UseReducer from './Components/UseReducer';
 
+import FormHandling from './Components/Forms/FormsHandling';
+
 
 
 
@@ -26,6 +28,9 @@ import './App.css';
 function App(){
     return(
         <div className="App">
+
+
+   <FormHandling/>
 
 
 
