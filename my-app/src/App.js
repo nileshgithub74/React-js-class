@@ -19,7 +19,7 @@ import './App.css';
 
 // import UseReducer from './Components/UseReducer';
 
-import FormHandling from './Components/Forms/FormsHandling';
+import FormHandle  from './Components/Forms/FormHandle';
 
 
 
@@ -30,7 +30,7 @@ function App(){
         <div className="App">
 
 
-   <FormHandling/>
+       <FormHandle/>
 
 
 
