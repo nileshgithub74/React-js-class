@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const LoginPage= () => {
+const LoginPage = () => {
   const [formData, setFormData] = useState({
     userName: "",
     email: "",
@@ -8,9 +8,6 @@ const LoginPage= () => {
     confirmPassword: "",
   });
 
-
-
-  
   const [submitted, setSubmitted] = useState([]);
 
   const handleSubmit = (e) => {
@@ -26,7 +23,7 @@ const LoginPage= () => {
       email: formData.email,
     };
 
-    setSubmitted([ newSubmission]);
+    setSubmitted([newSubmission]);
 
     setFormData({
       userName: "",
@@ -46,7 +43,7 @@ const LoginPage= () => {
 
   return (
     <>
-      <h1>Registration Form</h1>
+      <h3>Registration Form</h3>
 
       <form onSubmit={handleSubmit}>
         <label>UserName: </label>
@@ -110,4 +107,4 @@ const LoginPage= () => {
   );
 };
 
-export default  LoginPage;
+export default LoginPage;
