@@ -19,8 +19,9 @@ import './App.css';
 
 // import UseReducer from './Components/UseReducer';
 
-import FormHandle  from './Components/Forms/FormHandle';
+// import FormHandle  from './Components/Forms/FormHandle';
 
+import LoginPage from './Components/Forms/LoginPage';
 
 
 
@@ -29,8 +30,7 @@ function App(){
     return(
         <div className="App">
 
-
-       <FormHandle/>
+<LoginPage/>
 
 
 

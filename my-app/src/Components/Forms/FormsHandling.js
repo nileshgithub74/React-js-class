@@ -26,8 +26,6 @@ class FormsHandling  extends Component{
 
   handleOnSubmit =(event)=>{
     
-    
-    // alert( `${this.state.userName }  ${this.state.comments}`);
     event.preventDefault();
     this.setState({
       submiited : 'true',
