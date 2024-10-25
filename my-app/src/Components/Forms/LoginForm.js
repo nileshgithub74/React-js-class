@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react';
 
-export default function LoginForm() {
+function LoginForm() {
+  const [isLogin, setIsLogin] = useState(true); 
+
   const styles = {
     loginContainer: {
       display: 'flex',
@@ -85,17 +87,43 @@ export default function LoginForm() {
       color: '#1a73e8',
       textDecoration: 'none',
     },
-  }
+  };
 
   return (
     <div style={styles.loginContainer}>
       <div style={styles.loginForm}>
-        <h2 style={styles.heading}>Login Form</h2>
+        <h2 style={styles.heading}>{isLogin ? 'Login Form' : 'Signup Form'}</h2>
         <div style={styles.toggleButtons}>
-          <button style={{...styles.toggleButton, ...styles.activeButton, ...styles.leftButton}}>Login</button>
-          <button style={{...styles.toggleButton, ...styles.rightButton}}>Signup</button>
+          <button
+            onClick={() => setIsLogin(true)}
+            style={{
+              ...styles.toggleButton,
+              ...(isLogin ? styles.activeButton : {}),
+              ...styles.leftButton,
+            }}
+          >
+            Login
+          </button>
+          <button
+            onClick={() => setIsLogin(false)}
+            style={{
+              ...styles.toggleButton,
+              ...(!isLogin ? styles.activeButton : {}),
+              ...styles.rightButton,
+            }}
+          >
+            Signup
+          </button>
         </div>
         <form style={styles.form}>
+          {!isLogin && (
+            <input
+              type="text"
+              placeholder="Full Name"
+              aria-label="Full Name"
+              style={styles.input}
+            />
+          )}
           <input
             type="email"
             placeholder="Email Address"
@@ -108,13 +136,33 @@ export default function LoginForm() {
             aria-label="Password"
             style={styles.input}
           />
-          <a href="#" style={styles.forgotPassword}>Forgot password?</a>
-          <button type="submit" style={styles.loginButton}>Login</button>
+          {isLogin && (
+            <a href="#" style={styles.forgotPassword}>
+              Forgot password?
+            </a>
+          )}
+          <button type="submit" style={styles.loginButton}>
+            {isLogin ? 'Login' : 'Signup'}
+          </button>
         </form>
-        <p style={styles.signupPrompt}>
-          Not a member? <a href="#" style={styles.signupLink}>Signup now</a>
-        </p>
+        {isLogin ? (
+          <p style={styles.signupPrompt}>
+            Not a member?{' '}
+            <a href="#" style={styles.signupLink} onClick={() => setIsLogin(false)}>
+              Signup now
+            </a>
+          </p>
+        ) : (
+          <p style={styles.signupPrompt}>
+            Already have an account?{' '}
+            <a href="#" style={styles.signupLink} onClick={() => setIsLogin(true)}>
+              Login here
+            </a>
+          </p>
+        )}
       </div>
     </div>
-  )
+  );
 }
+
+export default LoginForm;
