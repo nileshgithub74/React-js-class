@@ -27,6 +27,10 @@
 
 // export default App;
 
+
+
+
+import Activity10 from './Activity10';
 import LoginForm from './Components/Forms/LoginForm';
 
 
@@ -35,7 +39,7 @@ import React from 'react'
 const App = () => {
   return (
     <>
-    <LoginForm/>
+    <Activity10/>
     
     
     </>
