@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <>
       <h1>This is the Contact Page</h1>
-      <p>Preferred contact method: {method}</p>
+      <h3>Preferred contact method: {method}</h3>
       <p>Feel free to reach out to us through your preferred method.</p>
     </>
   );
