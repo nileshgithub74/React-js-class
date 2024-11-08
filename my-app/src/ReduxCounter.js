@@ -22,6 +22,6 @@ const ReduxCounter = () => {
    
    </>
   )
-}
+};
 
-export default ReduxCounter
+export default ReduxCounter;

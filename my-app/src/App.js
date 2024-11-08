@@ -33,7 +33,6 @@
 
 
 import React from 'react'
-import ToggleButton from './ToggleButton'
 import ReduxCounter from './ReduxCounter'
 
 const App = () => {
